@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - SafeNet</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="website icon" type="jpg" href="image/Screenshot 2024-12-02 192427.png ">
+    <script defer src="shop.js"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="purchase.html">Metodo di pagamento</a>
+        </div>
+        <div class="profile-container">
+            <div class="profile-icon" onclick="toggleDropdown()">
+                <img id="profileImage" src="image/profilo.jpg" alt="Profile">
+            </div>
+            <div class="dropdown" id="dropdownMenu">
+                <p id="userStatus">Non sei connesso</p>
+                <div id="loggedInOptions" style="display:none;">
+                    <p><a href="profile.html" id="profileLink">Il Mio Profilo</a></p>
+                    <p><a href="logout.html" id="logoutLink" onclick="logout()">Logout</a></p>
+                </div>
+                <div id="loggedOutOptions" style="display:none;">
+                    <p><a href="login.html" id="loginLink">Login</a></p>
+                    <p><a href="register.html" id="registerLink">Registrati</a></p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h2>Prodotti</h2>
+        <div id="product-list"></div>
+
+        <h3>Installa il nostro antivirus</h3>
+        <p>Scannerizza i virus nel tuo pc</p>
+        <a href="https://drive.google.com/file/d/10FBHNytaC1KDI4BKak5KSGGaDu-Vecxs/view?usp=sharing" class="button">Scarica Gratis</a>
+
+        <div id="paypal-purchase">
+            <button onclick="alert('Reindirizzamento a PayPal...')">Compra su PayPal</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SafeNet. All rights reserved.</p>
+    </footer>
+</body>
+</html>

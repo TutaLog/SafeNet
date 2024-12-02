@@ -1,0 +1,19 @@
+{
+    "products": [
+        {
+            "name": "Antivirus Base",
+            "description": "Protegge i virus base",
+            "price": 19.99
+        },
+        {
+            "name": "Antivirus Avvanzato",
+            "description": "Antivirus Avvanzato e veloce con 24/7 contatti su SafeNet!",
+            "price": 39.99
+        },
+        {
+            "name": "Antivirus Pro",
+            "description": "Avrai migliori esperienze di antivirus SafeNet!",
+            "price": 59.99
+        }
+    ]
+}

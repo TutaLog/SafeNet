@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="website icon" type="jpg" href="image/Screenshot 2024-12-02 192427.png ">
+</head>
+<body>
+    <header class="header">
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="shop.html">Shop</a>
+            <a href="purchase.html">Metodo di pagamento</a>
+        </div>
+        <div class="profile-container">
+            <div class="profile-icon" onclick="toggleDropdown()">
+                <img src="image/profilo.jpg" alt="Profile">
+            </div>
+            <div class="dropdown" id="dropdownMenu">
+                <p id="userStatus">Non sei connesso</p>
+                <p><a href="profile.html">Il Mio Profilo</a></p>
+                <p><a href="logout.html" onclick="logout()">Logout</a></p>
+            </div>
+        </div>
+    </header>
+    <main class="auth-container">
+        <h1>Logout</h1>
+        <p>Sei stato disconnesso con successo.</p>
+        <a href="index.html" class="button">Torna alla Home</a>
+    </main>
+</body>
+</html>

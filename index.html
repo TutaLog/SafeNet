@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeNet - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="website icon" type="jpg" href="image/Screenshot 2024-12-02 192427.png ">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="purchase.html">Metodo di pagamento</a>
+        </div>
+        <div class="profile-container">
+            <div class="profile-icon" onclick="toggleDropdown()">
+                <img id="profileImage" src="images/guest-icon.png" alt="Profile">
+            </div>
+            <div class="dropdown" id="dropdownMenu">
+                <p id="userStatus">Non sei connesso</p>
+                <div id="loggedOutOptions">
+                    <p><a href="login.html">Login</a></p>
+                    <p><a href="register.html">Registrati</a></p>
+                </div>
+                <div id="loggedInOptions" style="display:none;">
+                    <p><a href="profile.html">Il Mio Profilo</a></p>
+                    <p><a href="#" onclick="logout()">Logout</a></p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Benvenuto in SafeNet</h1>
+            <p>Proteggi il tuo PC con il nostro potente antivirus. Sicurezza digitale per te e la tua famiglia.</p>
+            <a href="https://drive.google.com/file/d/10FBHNytaC1KDI4BKak5KSGGaDu-Vecxs/view?usp=sharing" class="button">Scarica Ora</a>
+        </section>
+
+        <section class="services">
+            <h2>I nostri servizi</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <img src="images/service1.png" alt="Protezione Base">
+                    <h3>Protezione Base</h3>
+                    <p>Protezione da malware, spyware e altre minacce comuni.</p>
+                </div>
+                <div class="service-card">
+                    <img src="images/service2.png" alt="Protezione Avanzata">
+                    <h3>Protezione Avanzata</h3>
+                    <p>Firewall personalizzabile e scansioni in tempo reale.</p>
+                </div>
+                <div class="service-card">
+                    <img src="images/service3.png" alt="Supporto 24/7">
+                    <h3>Supporto 24/7</h3>
+                    <p>Il nostro team è sempre disponibile per assisterti.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>Cosa dicono i nostri clienti</h2>
+            <div class="testimonial">
+                <img src="image/Signora.jpg" alt="Cliente Soddisfatto">
+                <p>"Il Fondatore TutaLog (cioè io) sono fiero di aver fatto un AntiVirus!"</p>
+                <p>- TutaLog</p>
+            </div>
+            <div class="testimonial">
+                <img src="image/signore.jpg" alt="Cliente Felice">
+                <p>"L'applicazione è molto fatta bene, per i costi sono bassi!"</p>
+                <p>- Flacchio_11</p>
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>Sei pronto a proteggere il tuo dispositivo?</h2>
+            <p>Unisciti a migliaia di utenti che si affidano a SafeNet per la sicurezza informatica.</p>
+            <a href="register.html" class="button">Registrati Ora</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 SafeNet. Tutti i diritti riservati.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
